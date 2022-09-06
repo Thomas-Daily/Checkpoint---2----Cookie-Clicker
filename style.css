@@ -1,0 +1,35 @@
+body {
+  background-color: #9ba0ef;
+}
+
+.upgradePic {
+  max-width: 100%;
+  max-height: 100%;
+  border-left: black;
+}
+
+.upgrade-row {
+  background-color: black;
+}
+
+.nAndLBG {
+  background-image: url(NarutoandLuffyFightBG.gif);
+}
+
+.zAndMBG {
+  background-image: url(ZoroandManFightBG.gif);
+}
+
+.kAndLBG {
+  background-image: url(KabutoandRockLeeFightBG.gif);
+  background-size: cover;
+}
+
+.fight-col {
+  height: 100vh;
+  overflow: auto;
+}
+
+.font {
+  -webkit-font-smoothing: none;
+}

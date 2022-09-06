@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <link rel="stylesheet" href="style.css">
+  <title>Anime Fighting Clicker</title>
+
+</head>
+
+
+
+<style>
+  body.debug [class*="col-"] {
+    outline: 5px double #bec0dc;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="debug">
+  <!--ANCHOR clicking section-->
+  <section>
+    <div class="row">
+      <div class="col-3">
+        <img onclick='punchBag()' src="bagNoPunch.png" alt="bagNoPunch.png" id="bagPic">
+        <h5 class="font">EXPERIENCE POINTS: <span id="totalExperience">0</span></h5>
+        <h6>EXP per Click: <span id="EXPperClick">1</span></h6>
+        <h6>Passive EXP: <span id="passiveEXP">0</span></h6>
+      </div>
+
+
+      <div class="col-4 fight-col">
+        <div class="row" id='narutoAndLuffyFight'></div>
+        <div class="row" id="zoroAndManFight"></div>
+        <div class="row" id="kabutoAndRockLeeFight"></div>
+      </div>
+
+
+      <div class="col-5">
+        <div class="row upgrade-row">
+
+          <h1 class="text-light"><U><B>PASSIVE UPGRADES</B></U></h1>
+
+          <div class="col-4">
+            <img onclick='buyNarutoAndLuffy()' class='upgradePic' src="NarutoandLuffy.png" alt="Naruto and Luffy">
+          </div>
+          <div class="col-8">
+            <div class="row text-light">
+              <div class="col-12" id="NandLinfo">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <img onclick='buyZoroAndMan()' class='upgradePic' src="Zoro.png" alt="Zoro">
+          </div>
+          <div class="col-8">
+            <div class="row text-light">
+              <div class="col-12" id="ZandMinfo">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <img onclick='buyKabutoandRockLee()' class='upgradePic' src="RockLee.png" alt="Rock Lee">
+          </div>
+          <div class="col-8">
+            <div class="row text-light">
+              <div class="col-12" id="KandLinfo">
+
+              </div>
+            </div>
+          </div>
+
+          <h1 class="text-light"><U><B>CLICK UPGRADES</B></U></h1>
+
+          <div class="col-4">
+            <img onclick='buyMorePunches()' class='upgradePic' src="manyPunches.png" alt="manyPunches.png">
+          </div>
+          <div class="col-8">
+            <div class="row text-light">
+              <div class="col-12" id="MPinfo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
