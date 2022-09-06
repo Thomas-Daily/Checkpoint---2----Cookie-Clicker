@@ -10,7 +10,7 @@ const Upgrades = [
     bonusEXP: 0
   },
   KabutoandRockLee = {
-    cost: 1000,
+    cost: 500,
     amountBought: 0,
     bonusEXP: 0
   },
@@ -91,9 +91,9 @@ function kabutoAndRockLeeGif() {
 function buyNarutoAndLuffy() {
   if (totalEXP >= LuffyandNaruto.cost) {
     totalEXP -= LuffyandNaruto.cost
-    LuffyandNaruto.cost += 50
+    LuffyandNaruto.cost += 25
     LuffyandNaruto.amountBought++
-    LuffyandNaruto.bonusEXP += 100
+    LuffyandNaruto.bonusEXP += 5
     narutoAndLuffyGif()
     updateTotalEXP()
     updateNarutoandLuffy()
@@ -118,7 +118,7 @@ function buyMorePunches() {
 function buyZoroAndMan() {
   if (totalEXP >= ZoroandMan.cost) {
     totalEXP -= ZoroandMan.cost
-    ZoroandMan.cost += 500
+    ZoroandMan.cost += 100
     ZoroandMan.amountBought++
     ZoroandMan.bonusEXP += 10
     zoroAndManGif()
@@ -131,7 +131,7 @@ function buyZoroAndMan() {
 function buyKabutoandRockLee() {
   if (totalEXP >= KabutoandRockLee.cost) {
     totalEXP -= KabutoandRockLee.cost
-    KabutoandRockLee.cost += 2500
+    KabutoandRockLee.cost += 250
     KabutoandRockLee.amountBought++
     KabutoandRockLee.bonusEXP += 15
     kabutoAndRockLeeGif()
